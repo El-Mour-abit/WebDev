@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator-MR</title>
+    <link rel="stylesheet" href="Calculator.css">
+    <link rel="stylesheet" href="bootsrap/bootstrap.css">
+</head>
+<body>
+    <article>
+        <div class="head">
+            <h1><span style="color: rgb(140, 250, 237);">C</span>alculator <span style="color: rgb(140, 250, 237);">-</span> MR</h1>
+            <img src="imges/icon.png" alt="icon">
+            
+        </div>
+    </article>
+    <main>
+        <aside class="aside">
+            <img src="imges/41450_AlbertEinstein-removebg-preview.png" alt="inchtayne" width="600" height="617">
+        </aside>
+        <div class="calcul">     
+            <textarea name="result" id="result" cols="45" rows="3"></textarea> 
+            <div class="buttonsCalc">
+                <div class="row-cols-5" id="buttons">
+                    <button id="btn" onclick="clearDisplay()">C</button>
+                    <button id="btn" onclick="appendToDisplay('(')">(</button>
+                    <button id="btn" onclick="appendToDisplay(')')">)</button>
+                    <button id="btn" onclick="delet()"><img src="imges/images-removebg-preview.png" alt="delete" width="20" height="20"></button>
+                    <button id="btn" onclick="appendToDisplay('9')">9</button>
+                    <button id="btn" onclick="appendToDisplay('8')">8</button>
+                    <button id="btn" onclick="appendToDisplay('7')">7</button>
+                    <button id="btn" onclick="appendToDisplay('/')">/</button>
+                    <button id="btn" onclick="appendToDisplay('6')">6</button>
+                    <button id="btn" onclick="appendToDisplay('5')">5</button>
+                    <button id="btn" onclick="appendToDisplay('4')">4</button>
+                    <button id="btn" onclick="appendToDisplay('*')">x</button>
+                    <button id="btn" onclick="appendToDisplay('3')">3</button>
+                    <button id="btn" onclick="appendToDisplay('2')">2</button>
+                    <button id="btn" onclick="appendToDisplay('1')">1</button>
+                    <button id="btn" onclick="appendToDisplay('-')">-</button>
+                    <button id="btn" onclick="appendToDisplay('0')">0</button>
+                    <button id="btn" onclick="appendToDisplay('.')">.</button>
+                    <button id="btn" onclick="appendToDisplay('+')">+</button>
+                    <button id="btn" onclick="calculateResult()">=</button>
+                    
+                </div>  
+            </div>
+        </div>
+    </main>
+
+    
+ <script src="Calculator.js"></script>   
+</body>
+</html>
